@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [testsuite]">
+  <listeners>
+    <listener class-name="com.nopcommerce.demo.customListeners.CustomListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Regression Test(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.nopcommerce.demo.testsuite.LoginTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyUserShouldNotLoginSuccessfullyWithInvalidCredentials"/>
+        </methods>
+      </class> <!-- com.nopcommerce.demo.testsuite.LoginTest -->
+      <class name="com.nopcommerce.demo.testsuite.ComputerTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="tearDown"/>
+          <include name="verifyUserAbleToNavigateToComputersSubMenuProductSoftwarePageSuccessfully"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.nopcommerce.demo.testsuite.ComputerTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [testsuite] -->

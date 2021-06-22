@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Regression Test"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="12.102">
+  <properties />
+  
+  
+            <testcase name="verifyUserAbleToNavigateToComputersSubMenuProductDesktopPageSuccessfully" time="2.998" classname="com.nopcommerce.demo.testsuite.ComputerTest" />
+                <testcase name="verifyUserAbleToNavigateToComputersSubMenuProductNotebooksPageSuccessfully" time="3.782" classname="com.nopcommerce.demo.testsuite.ComputerTest" />
+                <testcase name="verifyUserAbleToNavigateToComputersSubMenuProductSoftwarePageSuccessfully" time="4.148" classname="com.nopcommerce.demo.testsuite.ComputerTest" />
+                <testcase name="verifyUserAbleToNavigateToComputersPageSuccessfully" time="1.174" classname="com.nopcommerce.demo.testsuite.ComputerTest" />
+      
+</testsuite>
